@@ -107,6 +107,7 @@ public class Main {
 
         private static void fizzBuzzBeforeJava8(int num)
         {
+// best solution I have found thus far
             for(int i=0;++i<101;)
                 System.out.println(i%3>0?i%5>0?i:"Buzz":i%5>0?"Fizz":"FizzBuzz");}}
 
