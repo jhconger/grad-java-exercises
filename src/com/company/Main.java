@@ -2,7 +2,8 @@ package com.company;//package com.company;
 import java.util.stream.IntStream;
 import java.util.*;
 import java.util.stream.IntStream;
-
+import java.io.*;
+import java.util.Scanner;
 import java.util.Arrays;
 
 public class Main {
@@ -97,18 +98,46 @@ public class Main {
 //}
 
 
+//
+//
+//        public static void main(String[] args)
+//        {
+//            fizzBuzzBeforeJava8(100);
+//
+//        }
+//
+//        private static void fizzBuzzBeforeJava8(int num)
+//        {
+//// best solution I have found thus far
+//            for(int i=0;++i<101;)
+//                System.out.println(i%3>0?i%5>0?i:"Buzz":i%5>0?"Fizz":"FizzBuzz");}}
+//
+////            for (var i = 1; i <= 100; i++) { var result = “”; if (i % 3 === 0) { result = “Fizz”; } if (i % 5 === 0) { result += “Buzz”; } console.log(result || i); }
 
 
-        public static void main(String[] args)
-        {
-            fizzBuzzBeforeJava8(100);
+    public static void main(String[] args) {
 
+        String str = "mummy", nstr = "";
+        char ch;
+        str = str.toLowerCase();
+
+        String isPalindrome = "The word " + str + " is a Palindrome";
+        String isNotPalindrome = "The word " + str + " is not a Palindrome";
+        System.out.println("Original word: " + str);
+
+        for (int i = 0; i < str.length(); i++) {
+            ch = str.charAt(i);
+            nstr = ch + nstr;
+        }
+        System.out.println("Reversed word : " + nstr);
+        if (str.equals(nstr)) {
+            System.out.println(isPalindrome);
+        }
+        else {
+            System.out.println(isNotPalindrome);
         }
 
-        private static void fizzBuzzBeforeJava8(int num)
-        {
-// best solution I have found thus far
-            for(int i=0;++i<101;)
-                System.out.println(i%3>0?i%5>0?i:"Buzz":i%5>0?"Fizz":"FizzBuzz");}}
 
-//            for (var i = 1; i <= 100; i++) { var result = “”; if (i % 3 === 0) { result = “Fizz”; } if (i % 5 === 0) { result += “Buzz”; } console.log(result || i); }
+    }
+}
+
