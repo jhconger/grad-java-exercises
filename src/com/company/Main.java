@@ -101,12 +101,12 @@ public class Main {
 
 
     //  best solution I have found thus far
-    public static void main(String[] args) {
-
-        for (int i = 0; i++ < 100; )
-            System.out.println(i % 3 > 0 ? i % 5 > 0 ? i : "Buzz" : i % 5 > 0 ? "Fizz" : "FizzBuzz");
-    }
-}
+//    public static void main(String[] args) {
+//
+//        for (int i = 0; i++ < 100; )
+//            System.out.println(i % 3 > 0 ? i % 5 > 0 ? i : "Buzz" : i % 5 > 0 ? "Fizz" : "FizzBuzz");
+//    }
+//}
 
 //     is i divisible by 3
 //              YES: test i divisible by 5
@@ -143,3 +143,42 @@ public class Main {
 //    }
 //}
 
+// This is for swapping values of 2 variables
+    public static void main(String[] args) {
+
+        int a = 11, b = 2;
+
+
+        System.out.println("Initial Values: " + "a = " + a +  "  " +  "b = " + b );
+//Logic 1
+//        int t=a;
+//         a= b;
+//         b=t;
+//
+//        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
+
+//Logic 2 third variable
+
+//        a = a+b;
+//        b = a -b;
+//        a = a-b;
+//
+//        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
+
+        //Logic 3 (only if a and b != 0)
+//        a = a*b;
+//        b = a/b;
+//        a = a/b;
+//        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
+
+//        //Logic 4 (bitwise XOR (^) )
+//        a = a^b;
+//        b = a^b;
+//        a = a^b;
+//        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
+
+        //Logic 5 (Single statement)
+        b=a=b;
+        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
+    }
+}
