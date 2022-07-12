@@ -1,5 +1,6 @@
 package com.company;//package com.company;
 
+import java.sql.SQLOutput;
 import java.util.stream.IntStream;
 import java.util.*;
 import java.util.stream.IntStream;
@@ -144,12 +145,12 @@ public class Main {
 //}
 
 // This is for swapping values of 2 variables
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
+//
+//        int a = 11, b = 2;
 
-        int a = 11, b = 2;
 
-
-        System.out.println("Initial Values: " + "a = " + a +  "  " +  "b = " + b );
+//        System.out.println("Initial Values: " + "a = " + a +  "  " +  "b = " + b );
 //Logic 1
 //        int t=a;
 //         a= b;
@@ -165,7 +166,7 @@ public class Main {
 //
 //        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
 
-        //Logic 3 (only if a and b != 0)
+    //Logic 3 (only if a and b != 0)
 //        a = a*b;
 //        b = a/b;
 //        a = a/b;
@@ -177,8 +178,85 @@ public class Main {
 //        a = a^b;
 //        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
 
-        //Logic 5 (Single statement)
-        b=a=b;
-        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
-    }
-}
+    //Logic 5 (Single statement)
+//        b=a=b;
+//        System.out.println("Swapped Values: " + "a = " + a +  "  " +  "b = " + b );
+//    }
+//}
+
+// print
+// 1*****
+//12****
+//123***
+//1234**
+//12345*
+//123456
+//    public static void main(String[] args) {
+//        for (int i = 1; i <= 6; i++) {
+//            for (int j = 1; j <= i; j++) {
+//            System.out.print(j);
+//        }
+//        for (int k = 6; k > i; k--){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        {
+//        }
+//    }
+//}
+//}
+
+
+// print:
+//        12345@
+//        1234@@
+//        123@@@
+//        12@@@@
+//        1@@@@@
+//        @@@@@@
+
+//    public static void main(String[] args) {
+//
+//        for (int i = 6; i >= 0; i--) {
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print(j);
+//            }
+//            for (int k = 6; k > i; k--) {
+//                System.out.print("@");
+//            }
+//            System.out.println();
+//
+//        }
+//    }
+//}
+
+
+//    print:
+//@
+//@ @
+//@   @
+//@     @
+//@       @
+//@ @ @ @ @ @
+//
+//    public static void main(String[] args) {
+//        System.out.println("@");
+//
+//        for (int i = 1; i <= 5; i++) {
+//            System.out.print("@");
+//            for (int j = 0; j <= i; j++) {
+//                System.out.print(" ");
+//            }
+//            System.out.print("@");
+//            System.out.println();
+//        }
+//            for (int j = 5; j > 0; j--) {
+//System.out.print("@ ");
+////
+//            }
+//        }
+//    }
+//
+
+
+
