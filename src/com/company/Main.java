@@ -278,3 +278,35 @@ public class Main {
 //        }
 //    }
 //}
+
+// Take input from user for a box (# of rows and # of columns) and print B for # of rows and # of columns
+//    Rows: 4
+//    Cols: 12
+//    BBBBBBBBBBBB
+//    BBBBBBBBBBBB
+//    BBBBBBBBBBBB
+//    BBBBBBBBBBBB
+//
+
+    //    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Rows: ");
+//        int rows = sc.nextInt();
+//        System.out.println("Cols: ");
+//        int col = sc.nextInt();
+//        if (rows <= 0 || col <= 0) {
+//            System.out.println("Please input a number greater than 0");
+//        } else {
+//            for (int i = 1; i <= rows; i++) {
+//                for (int j = 1; j <= col; j++) {
+//                    System.out.print("B");
+//                }
+//                System.out.println();
+//            }
+//        }
+//    }
+//}
+    public static void main(String[] args) {
+
+    }
+}
