@@ -308,7 +308,6 @@ public class Main {
 //}
 
 
-
 // Take 10 numbers from user and print largest and smallest number.
 //
 //    public static void main(String[] args) {
@@ -333,5 +332,37 @@ public class Main {
 //            i++;
 //        }
 //        System.out.println("Larger: " + large + "    Smaller: " + small);
+//    }
+//}
+
+
+// Write a program that takes the base and exponent from user and print the result using a do while loop
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Provide base number: ");
+//        int b = sc.nextInt();
+//        System.out.println("Provide exponent: ");
+//        int e = sc.nextInt();
+//        int res = 1, i = 1;
+//        do {
+//            res = res * b;
+//            i++;
+//        } while (i <= e);
+//        System.out.println(res);
+//    }
+//}
+
+
+    //Using for loop print result of multiplication of all odd #s from 1 to 20 and the result of the sum of all even numbers from 1 to 100
+//    public static void main(String[] args) {
+//    int odd = 1, even = 0;
+//    for (int i = 1; i<=20; i+=2) {
+//        odd = odd * i;
+//    }
+//        for (int i = 2; i<=100; i+=2) {
+//            even = even + i;
+//        }
+//        System.out.println(even);
+//        System.out.println(odd);
 //    }
 //}
