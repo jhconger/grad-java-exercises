@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 import java.io.*;
 import java.util.Scanner;
 import java.util.Arrays;
-
+//
 public class Main {
 //  static int distClosestNumbers(int[] numbers) {
 //      System.out.println("The original array is: ");
@@ -366,3 +366,53 @@ public class Main {
 //        System.out.println(odd);
 //    }
 //}
+//
+//    public static class Result {
+//
+//
+//        public static void plusMinus(List<Integer> arr) {
+//            // Write your code here
+//            double positive = 0, negative = 0, zero = 0;
+//            int arrSize = arr.size();
+//
+//            for (int i = 0; i < arr.size(); i++) {
+//
+//
+//                if (arr.get(i) > 0) {
+//                    positive++;
+//                } else if (arr.get(i) < 0) {
+//                    negative++;
+//                } else {
+//                    zero++;
+//                }
+//            }
+//            System.out.printf("%1.6f \n", positive / arrSize);
+//            System.out.printf("%1.6f \n", negative / arrSize);
+//            System.out.printf("%1.6f \n", zero / arrSize);
+//
+//        }
+//    }
+//
+//
+//    class Solution {
+//        public static void main(String[] args) throws IOException {
+//            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//
+//            int n = Integer.parseInt(bufferedReader.readLine().trim());
+//
+//            String[] arrTemp = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+//
+//            List<Integer> arr = new ArrayList<>();
+//
+//            for (int i = 0; i < n; i++) {
+//                int arrItem = Integer.parseInt(arrTemp[i]);
+//                arr.add(arrItem);
+//            }
+//
+//            Result.plusMinus(arr);
+//
+//            bufferedReader.close();
+//        }
+//    }
+//}
+//
