@@ -1,4 +1,4 @@
-package com.company;//package com.company;
+package com.company;
 
 import java.sql.SQLOutput;
 import java.util.stream.IntStream;
@@ -457,7 +457,7 @@ public class Main {
 //        }
 
 
-//
+    //
 //    public static void main(String[] args) {
 //        System.out.println("      #");
 //                for (int i = 6; i >= 1; i--) {
@@ -479,40 +479,61 @@ public class Main {
 //                    System.out.print("# ");
 //                }
 //
-public static void main(String[] args) {
-    System.out.println("    #");
-                for (int i = 3; i >= 1; i--) {
+//    public static void main(String[] args) {
+//        System.out.println("    #");
+//        for (int i = 3; i >= 1; i--) {
+//
+//            for (int j = 1; j < i; j++) {
+//                System.out.print(" ");
+//            }
+//            System.out.print("#");
+//            for (int k = 3; k >= i; k--) {
+//                System.out.print(" ");
+//            }
+//            for (int k = 3; k >= i; k--) {
+//                System.out.print(" ");
+//            }
+//            System.out.print("#");
+//            System.out.println();
+//        }
+//
+//        for (int i = 2; i >= 1; i--) {
+//
+//            for (int j = 2; j >= i; j--) {
+//                System.out.print(" ");
+//            }
+//            System.out.print("#");
+//            for (int k = 0; k < i; k++) {
+//                System.out.print(" ");
+//            }
+//            for (int k = 0; k < i; k++) {
+//                System.out.print(" ");
+//            }
+//            System.out.print("#");
+//            System.out.println();
+//        }
+//        System.out.println("   #");
+//    }
+//}
 
-            for (int j = 1; j < i; j++) {
-                System.out.print(" ");
-            }
-                    System.out.print("#");
-            for (int k = 3; k >= i; k--) {
-                System.out.print(" ");
-            }
-            for (int k = 3; k >= i; k--) {
-                System.out.print(" ");
-            }
-                    System.out.print("#");
-                    System.out.println();
-        }
+    public static void main(String[] args) {
+        System.out.println("please enter a number to check if it is a prime number: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        boolean isPrime = true;
 
-    for (int i = 2; i >= 1; i--) {
+        for (int i = 2; i < a / 2; i++) {
 
-        for (int j = 2; j >= i; j--) {
-            System.out.print(" ");
+            if (a % 2 == 0) {
+                isPrime = false;
+                break;
+            }
         }
-        System.out.print("#");
-        for (int k = 0; k < i; k++) {
-            System.out.print(" ");
+        if (isPrime) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
-        for (int k = 0; k < i; k++) {
-            System.out.print(" ");
-        }
-        System.out.print("#");
-        System.out.println();
-    }
-    System.out.println("   #");
     }
 }
 
