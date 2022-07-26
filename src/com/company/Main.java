@@ -516,24 +516,24 @@ public class Main {
 //    }
 //}
 
-    public static void main(String[] args) {
-        System.out.println("please enter a number to check if it is a prime number: ");
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        boolean isPrime = true;
-
-        for (int i = 2; i < a / 2; i++) {
-
-            if (a % 2 == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
-        }
-    }
-}
+//    public static void main(String[] args) {
+//        System.out.println("please enter a number to check if it is a prime number: ");
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        boolean isPrime = true;
+//
+//        for (int i = 2; i <= a / 2; i++) {
+//
+//            if (a % i == 0) {                 //  if (a % 2 == 0) {    results in false returns.  a % i works correctly.
+//                isPrime = false;
+//                break;
+//            }
+//        }
+//        if (isPrime) {
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println("No");
+//        }
+//    }
+//}
 
