@@ -537,3 +537,41 @@ public class Main {
 //    }
 //}
 
+//    public static void main(String[] args) {
+//        System.out.println("Please enter a number: ");
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int res = 1;
+//        int q = a/10;
+//        while (q != 0) {
+//            q = q/10;
+//            res++;
+//        }
+//        System.out.println(res);
+//    }
+//}
+
+
+    //enter a number and return how many prime numbers there are between 0 and that number:
+    public static void main(String[] args) {
+        System.out.println("Please enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int count = 0, large = 0;
+        boolean isPrime = true;
+        for (int i = 1; i < a; i++) {
+            isPrime = true;
+            for (int j = 2; j < i; j++) {
+            if (i % j == 0) {
+                isPrime = false;
+                break;
+            }
+            }
+            if(isPrime && i != 2) {
+                count++;
+                isPrime = false;
+            }
+        }
+        System.out.println(count);
+    }
+}
