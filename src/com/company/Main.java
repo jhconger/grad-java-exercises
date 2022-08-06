@@ -576,20 +576,87 @@ public class Main {
 //    }
 //}
 
+//
+//    public static void main(String[] args) {
+//        int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//        int[] arr2 = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+//        int[] arr3 = new int[20];
+//        int index = 0;
+//        for (int i = 0; i < arr1.length; i++) {
+//            arr3[index++] = arr1[i];
+//            arr3[index++] = arr2[i];
+//        }
+//        for (int i = 0; i < arr3.length; i++) {
+//            System.out.print(arr3[i] + "  ");
+//        }
+//    }
+//}
+//
+
+//input is array of ten random numbers, output the second-smallest and second-largest numbers.
+//    public static void main(String[] args) {
+//        int[] arr = {3, 87, 43, 18, 1, 6, 37, 28, 91, 10};
+//        int small = arr[0], large = arr[0];
+//        int s_small = -1, s_large = -1;
+//        for (int i = 1; i < arr.length; i++) {
+//            if (arr[i] < small) {
+//                s_small = small;
+//                small = arr[i];
+//            }
+//            if (arr[i] > large) {
+//                s_large = large;
+//                large = arr[i];
+//            }
+//        }
+//        System.out.println(s_small + "  " + s_large);
+//    }
+//}
+
+
+//get array from user and have them choose two numbers from array.  Return array with those two numbers swapped.
+//    public static void main(String[] args) {
+//Scanner sc = new Scanner(System.in);
+//int [] arr = new int [10];
+//        System.out.println(" Please enter ten numbers for Array Values: ");
+//        for (int i = 0 ; i < arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//        System.out.println("Choose one of previous values Num1: ");
+//        int a = sc.nextInt();
+//        System.out.println("Choose another of the previous values Num2: ");
+//        int b = sc.nextInt();
+//        int index_a = 0, index_b = 0;
+//        for(int i = 0; i < arr.length; i++) {
+//            if(arr[i] == a) {
+//                index_a = i;
+//            }
+//            if(arr[i] == b) {
+//                index_b = i;
+//            }
+//        }
+//        int c = arr[index_a];
+//        arr[index_a] = arr[index_b];
+//        arr[index_b] = c;
+//        for(int i = 0; i < arr.length; i++) {
+//            System.out.println(arr[i] + " ");
+//        }
+//    }
+//
+//}
 
 
 
+//declare and initialize two arrays and print numbers that are in both arrays.
     public static void main(String[] args) {
-     int []arr1 = {1,2,3,4,5,6,7,8,9,10};
-     int []arr2 = {11,12,13,14,15,16,17,18,19,20};
-     int []arr3 = new int [20];
-     int index = 0;
-     for(int i = 0; i < arr1.length; i++) {
-         arr3[index++] = arr1[i];
-         arr3[index++] = arr2[i];
-     }
-     for(int i = 0; i < arr3.length; i++) {
-         System.out.print(arr3[i] + "  ");
-     }
+        int[] arr1 = {1, 2, 13, 4, 5, 6, 17, 8, 9, 10};
+        int[] arr2 = {11, 12, 13, 2, 15, 16, 17, 9, 19, 20};
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr1.length; j++) {
+                if (arr1[i] == arr2[j]) {
+                    System.out.println(arr1[i]);
+                }
+            }
+        }
     }
-    }
+}
+
