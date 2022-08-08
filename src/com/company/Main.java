@@ -647,35 +647,69 @@ public class Main {
 
     //declare and initialize two arrays and print numbers that are in both arrays.
 // then take values of arrays and swap them. (Arr1 has values of arr2 and vice versa.
-    public static void main(String[] args) {
-        int[] arr1 = {1, 2, 13, 4, 5, 6, 17, 8, 9, 10};
-        int[] arr2 = {11, 12, 13, 2, 15, 16, 17, 9, 19, 20};
+//    public static void main(String[] args) {
+//        int[] arr1 = {1, 2, 13, 4, 5, 6, 17, 8, 9, 10};
+//        int[] arr2 = {11, 12, 13, 2, 15, 16, 17, 9, 19, 20};
+//
+//        for (int i = 0; i < arr1.length; i++) {
+//            for (int j = 0; j < arr1.length; j++) {
+//                if (arr1[i] == arr2[j]) {
+//                    System.out.println(arr1[i]);
+//                }
+//            }
+//        }
+//        int[] arr3 = new int[10];
+//        for (int i = 0; i < arr1.length; i++) {
+//            arr3[i] = arr1[i];
+//        }
+//        for (int i = 0; i < arr1.length; i++) {
+//            arr1[i] = arr2[i];
+//        }
+//        for (int i = 0; i < arr1.length; i++) {
+//            arr2[i] = arr3[i];
+//        }
+//        for (int i = 0; i < arr1.length; i++) {
+//            arr2[i] = arr3[i];
+//            System.out.print(arr1[i] + " ");
+//        }
+//        System.out.println();
+//        for (int i = 0; i < arr2.length; i++) {
+//            System.out.print(arr2[i] + " ");
+//        }
+//    }
+//}
+//
 
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1.length; j++) {
-                if (arr1[i] == arr2[j]) {
-                    System.out.println(arr1[i]);
-                }
-            }
-        }
-        int[] arr3 = new int[10];
-        for (int i = 0; i < arr1.length; i++) {
-            arr3[i] = arr1[i];
-        }
-        for (int i = 0; i < arr1.length; i++) {
-            arr1[i] = arr2[i];
-        }
-        for (int i = 0; i < arr1.length; i++) {
-            arr2[i] = arr3[i];
-        }
-        for (int i = 0; i < arr1.length; i++) {
-            arr2[i] = arr3[i];
-            System.out.print(arr1[i] + " ");
-        }
-        System.out.println();
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.print(arr2[i] + " ");
-        }
-    }
-}
+//    public static void main(String[] args) {
+//        Scanner sc =  new Scanner(System.in);
+////        long[] arr = new long[5];
+//        long sum = 0;
+//        long max = Long.MIN_VALUE;
+//        long min = Long.MAX_VALUE;
+//        for(int i = 0; i < 5; i++) {
+//            long n = sc.nextLong();
+//            sum += n;
+//            max = Math.max(max, n);
+//            min = Math.min(min, n);
+//        }
+//        System.out.println((sum - max) + " " + (sum - min));
+//    }
+//
+//}
 
+
+
+//code for switching civilian to military time
+//
+//public static void main(String[] args) {
+//
+//            if (s.substring(s.length() - 2).equals("AM")) {
+//        String h = (Integer.valueOf(s.substring(0, 2)) == 12) ? "00" : s.substring(0, 2);
+//        return h.concat(s.substring(2, s.length() - 2));
+//    } else {
+//        String h = (Integer.valueOf(s.substring(0, 2)) == 12) ?
+//                "12" : String.valueOf(Integer.valueOf(s.substring(0, 2)) + 12);
+//        return h + s.substring(2, s.length() - 2);
+//    }
+//}
+//
