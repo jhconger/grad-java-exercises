@@ -1,12 +1,8 @@
 package com.company;
 
-import java.sql.SQLOutput;
-import java.util.stream.IntStream;
-import java.util.*;
-import java.util.stream.IntStream;
-import java.io.*;
-import java.util.Scanner;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 //
 public class Main {
@@ -698,7 +694,6 @@ public class Main {
 //}
 
 
-
 //code for switching civilian to military time
 //
 //public static void main(String[] args) {
@@ -713,3 +708,55 @@ public class Main {
 //    }
 //}
 //
+
+
+//find median of array
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int a[] = new int[n];
+//        for (int i = 0; i < n; i++) a[i] = sc.nextInt();
+//        Arrays.sort(a);
+//        if ((n & 1) == 1) {
+//            System.out.println(a[n / 2]);
+//        } else {
+//            System.out.println((a[n / 2] + a[n / 2 + 1]) / 2);
+//        }
+//        sc.close();
+//    }
+//}
+
+
+    //find unique integer in array
+//    public static int lonelyInteger(int [] a) {
+//
+//    int val = 0;
+//for(int num : a) {
+//        val = val ^ num;
+//    }
+//return val;
+//}
+//}
+
+
+//    public static int diagonalDifference(List<List<Integer>> arr) {
+//        // Write your code here
+//        int leftdiagonal = 0;
+//        int rightdiagonal = 0;
+//        for(int i = 0, j = arr.get(0).size()-1; i < arr.get(0).size(); i++, j--){
+//            leftdiagonal = leftdiagonal + arr.get(i).get(i);
+//            rightdiagonal = rightdiagonal + arr.get(i).get(j);
+//        }
+//        return Math.abs(leftdiagonal - rightdiagonal);
+//    }
+//}
+
+// working countingSort
+//    public static List<Integer> countingSort(List<Integer> arr) {
+//        // Write your code here
+//        List<Integer> res = new ArrayList<Integer>(Collections.nCopies(100, 0));
+//        for(Integer a : arr)
+//            res.set(a, res.get(a)+1);
+//        return res;
+//    }
+//}
