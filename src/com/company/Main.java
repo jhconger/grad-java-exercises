@@ -798,3 +798,86 @@ public class Main {
 //        System.out.println();
 //    }
 //}
+
+
+//tower breaker
+//public static int towerBreakers(int n, int m) {
+//    // Write your code here
+//      n = height of tower
+//      m= number of towers
+//
+//
+//      if number of towers is even player 2 will always win
+//      if number of towers is odd player 1 will always win
+//      if number of towers is 1, player 1 always wins
+//      if height is one player 2 always wins
+//      return (n % 2 == 0 || m == 1) ? 2 : 1;
+//      }
+//
+//}
+
+
+////caesars cipher
+//    public static void main(String[] args) {
+//
+//        Scanner in = new Scanner(System.in);
+//
+//        int n       = in.nextInt();
+//        String s    = in.next();
+//        int r       = in.nextInt();
+//
+//        String out  = "";
+//
+//    char[] a = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+//    char[] b = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+//
+//        for(int i = 0; i < s.length(); i++) {
+//
+//        char c = s.charAt(i);
+//
+//        if(!Character.isLetter(c)) {
+//            out += c;
+//        }
+//
+//        for(int j = 0; j < a.length; j++) {
+//
+//            if(c == a[j]) {
+//                out += a[(j+r)%a.length];
+//            }
+//            if(c == b[j]) {
+//                out += b[(j+r)%a.length];
+//            }
+//
+//        }
+//
+//    }
+//
+//        System.out.println(out);
+//
+//}
+//}
+
+//    public static void main(String[] args) {
+//
+//String strl = "abcdefghijklmnopqrstuvwxyz";
+//    String stru = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//    String ans = "";
+//        for(int i = 0 ; i < s.length() ; i++){
+//        if((s.charAt(i)>='a' && s.charAt(i)<='z') || (s.charAt(i)>='A' && s.charAt(i)<='Z')){
+//            for(int j = 0 ; j < strl.length() ; j++){
+//                if(s.charAt(i) == strl.charAt(j)){
+//                    ans += strl.charAt((j+k)%26);
+//                }
+//                else if(s.charAt(i) == stru.charAt(j)){
+//                    ans += stru.charAt((j+k)%26);
+//                }
+//            }
+//        }
+//        else{
+//            ans += s.charAt(i);
+//        }
+//    }
+//        return ans;
+//}
+//}
+d
