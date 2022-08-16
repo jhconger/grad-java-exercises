@@ -1,6 +1,6 @@
 package com.company;
-
 import java.util.*;
+
 
 //
 public class Main {
@@ -760,7 +760,6 @@ public class Main {
 //}
 
 
-
 //zigzag sequence
 //public static void main (String[] args) throws java.lang.Exception {
 //    Scanner kb = new Scanner(System.in);
@@ -880,4 +879,107 @@ public class Main {
 //        return ans;
 //}
 //}
-d
+
+
+    //grid challenge
+//doesnt work
+//    public static void main(String[] args) throws IOException {
+//        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int t = Integer.parseInt(br.readLine());
+//        while(t-->0){
+//            int n = Integer.parseInt(br.readLine());
+//            String[]grid = new String[n];
+//            for(int i=0;i<n;i++) {
+//                grid[i] = sort(br.readLine());
+//            }
+//
+//            boolean ok = true;
+//
+//            for(int i=0;i<n;i++){
+//                for(int j=1;j<n;j++){
+//                    if(grid[j].charAt(i) < grid[j-1].charAt(i)){
+//                        ok = false;
+//                        break;
+//                    }
+//                }
+//            }
+//            System.out.println(ok?"YES":"NO");
+//
+//        }
+//    }
+//    }
+
+    //Works!!!!!
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int t = sc.nextInt();
+//        while (t > 0) {
+//            int n = sc.nextInt();
+//            char[][] grid = new char[n][n];
+//            for (int i = 0; i < n; i++) {
+//                grid[i] = sc.next().toCharArray();
+//                Arrays.sort(grid[i]);
+//            }
+//            boolean ok = true;
+//            for (int i = 0; i < n - 1; i++) {
+//                for (int j = 0; j < n; j++) {
+//                    if (grid[i][j] > grid[i + 1][j]) {
+//                        ok = false;
+//                        break;
+//                    }
+//                }
+//            }
+//
+//            if (ok) {
+//                System.out.println("YES");
+//            } else {
+//                System.out.println("NO");
+//            }
+//        }
+//    }
+//}
+    public static String main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+
+            int n = sc.nextInt();
+            char[][] grid = new char[n][n];
+
+        for (int i = 0; i < n; i++) {
+                grid[i] = sc.next().toCharArray();
+                Arrays.sort(grid[i]);
+            }
+        for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n; j++) {
+        if (grid[i][j] > grid[i + 1][j]) {
+        return "NO";
+        }
+        }
+        }
+        return "YES";
+        }
+        }
+//works
+//    public static String gridChallenge(List<String> grid) {
+//    Scanner sc = new Scanner(System.in);
+//    int t = sc.nextInt();
+//    int n = sc.nextInt();
+//        for (int i = 0 ; i < grid.size(); i++) {
+//            char[] c = grid.get(i).toCharArray();
+//            Arrays.sort(c);
+//            grid.set(i, new String(c));
+//        }
+//
+//        for (int i = 0 ; i < grid.get(0).length() ; i++) {
+//            int j = 0;
+//            while (j < grid.size() - 1) {
+//                if (grid.get(j).charAt(i) > grid.get(j + 1).charAt(i)) {
+//                    return "NO";
+//                }
+//                j++;
+//            }
+//        }
+//        return "YES";
+//    }
+//}
