@@ -939,27 +939,27 @@ public class Main {
 //        }
 //    }
 //}
-    public static String main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-
-            int n = sc.nextInt();
-            char[][] grid = new char[n][n];
-
-        for (int i = 0; i < n; i++) {
-                grid[i] = sc.next().toCharArray();
-                Arrays.sort(grid[i]);
-            }
-        for (int i = 0; i < n-1; i++) {
-        for (int j = 0; j < n; j++) {
-        if (grid[i][j] > grid[i + 1][j]) {
-        return "NO";
-        }
-        }
-        }
-        return "YES";
-        }
-        }
+//    public static String main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int t = sc.nextInt();
+//
+//            int n = sc.nextInt();
+//            char[][] grid = new char[n][n];
+//
+//        for (int i = 0; i < n; i++) {
+//                grid[i] = sc.next().toCharArray();
+//                Arrays.sort(grid[i]);
+//            }
+//        for (int i = 0; i < n-1; i++) {
+//        for (int j = 0; j < n; j++) {
+//        if (grid[i][j] > grid[i + 1][j]) {
+//        return "NO";
+//        }
+//        }
+//        }
+//        return "YES";
+//        }
+//        }
 //works
 //    public static String gridChallenge(List<String> grid) {
 //    Scanner sc = new Scanner(System.in);
@@ -983,3 +983,41 @@ public class Main {
 //        return "YES";
 //    }
 //}
+
+
+//    merge lists
+    static Main(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
+     if (head1 == null) return head1;
+    else if (head2 == null) return head2;
+
+    List<Integer> integerStack1 = new ArrayList<>();
+    List<Integer> integerStack2 = new ArrayList<>();
+    for (int i = 0; ; i++) {
+        integerStack1.add(head1.data);
+        if (head1.next != null)
+            head1 = head1.next;
+        else
+            break;
+    }
+
+    for (int i = 0; ; i++) {
+        integerStack2.add(head2.data);
+        if (head2.next != null)
+            head2 = head2.next;
+        else
+            break;
+    }
+
+    integerStack1.addAll(integerStack2);
+    Collections.sort(integerStack1);
+
+    SinglyLinkedListNode result = null;
+    int counter = integerStack1.size();
+    for (int i = 0; i < counter; i++) {
+        result = insertNodeAtTail(result, integerStack1.get(i));
+    }
+
+    return result;
+
+
+}
