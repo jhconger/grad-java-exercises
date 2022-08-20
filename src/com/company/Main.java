@@ -986,38 +986,61 @@ public class Main {
 
 
 //    merge lists
-    static Main(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
-     if (head1 == null) return head1;
-    else if (head2 == null) return head2;
+//    static Main(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
+//     if (head1 == null) return head1;
+//    else if (head2 == null) return head2;
+//
+//    List<Integer> integerStack1 = new ArrayList<>();
+//    List<Integer> integerStack2 = new ArrayList<>();
+//    for (int i = 0; ; i++) {
+//        integerStack1.add(head1.data);
+//        if (head1.next != null)
+//            head1 = head1.next;
+//        else
+//            break;
+//    }
+//
+//    for (int i = 0; ; i++) {
+//        integerStack2.add(head2.data);
+//        if (head2.next != null)
+//            head2 = head2.next;
+//        else
+//            break;
+//    }
+//
+//    integerStack1.addAll(integerStack2);
+//    Collections.sort(integerStack1);
+//
+//    SinglyLinkedListNode result = null;
+//    int counter = integerStack1.size();
+//    for (int i = 0; i < counter; i++) {
+//        result = insertNodeAtTail(result, integerStack1.get(i));
+//    }
+//
+//    return result;
+//
+//
+//}
 
-    List<Integer> integerStack1 = new ArrayList<>();
-    List<Integer> integerStack2 = new ArrayList<>();
-    for (int i = 0; ; i++) {
-        integerStack1.add(head1.data);
-        if (head1.next != null)
-            head1 = head1.next;
-        else
-            break;
+//queue
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int arr[] = new int[n];
+        int rear = -1;
+        int front = 0;
+        for (int i = 0; i < n; i++) {
+
+            int ops = in.nextInt();
+            if (ops == 1) {
+                int num = in.nextInt();
+                arr[++rear] = num;
+            } else if (ops == 2) {
+                int num = arr[front++];
+            } else {
+                System.out.println(arr[front]);
+            }
+        }
     }
-
-    for (int i = 0; ; i++) {
-        integerStack2.add(head2.data);
-        if (head2.next != null)
-            head2 = head2.next;
-        else
-            break;
-    }
-
-    integerStack1.addAll(integerStack2);
-    Collections.sort(integerStack1);
-
-    SinglyLinkedListNode result = null;
-    int counter = integerStack1.size();
-    for (int i = 0; i < counter; i++) {
-        result = insertNodeAtTail(result, integerStack1.get(i));
-    }
-
-    return result;
-
-
 }
