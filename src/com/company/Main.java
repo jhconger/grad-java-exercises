@@ -1023,24 +1023,43 @@ public class Main {
 //}
 
 //queue
-    public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        int rear = -1;
-        int front = 0;
-        for (int i = 0; i < n; i++) {
+//    public static void main(String[] args) {
+//        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+//        Scanner in = new Scanner(System.in);
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        int rear = -1;
+//        int front = 0;
+//        for (int i = 0; i < n; i++) {
+//
+//            int ops = in.nextInt();
+//            if (ops == 1) {
+//                int num = in.nextInt();
+//                arr[++rear] = num;
+//            } else if (ops == 2) {
+//                int num = arr[front++];
+//            } else {
+//                System.out.println(arr[front]);
+//            }
+//        }
+//    }
+//}
 
-            int ops = in.nextInt();
-            if (ops == 1) {
-                int num = in.nextInt();
-                arr[++rear] = num;
-            } else if (ops == 2) {
-                int num = arr[front++];
-            } else {
-                System.out.println(arr[front]);
-            }
-        }
-    }
-}
+//given an array print second largest and second smallest values from that array.
+//    public static void main(String[] args) {
+//        int[] arr = {5, 50, 34, 1, 6, 56, 82, 43, 101};
+//        int small = arr[0], large = arr[0];
+//        int s_small = -1, s_large = -1;
+//        for(int i = 1; i < arr.length; i++) {
+//            if(arr[i] < small){
+//                 s_small = small;
+//                 small = arr[i];
+//            }
+//            if(arr[i] > large) {
+//                 s_large = large;
+//                 large = arr[i];
+//            }
+//        }
+//        System.out.println(s_small + " " + s_large);
+//    }
+//}
