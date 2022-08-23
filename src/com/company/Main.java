@@ -1063,3 +1063,34 @@ public class Main {
 //        System.out.println(s_small + " " + s_large);
 //    }
 //}
+
+//accept array from user then take index of two numbers in array and swap them
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int[] arr = new int[10];
+//        System.out.println("Array Values: ");
+//        for (int i = 0; i <  arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//        System.out.println("Num1: ");
+//        int a = sc.nextInt();
+//        System.out.println("Num2 : ");
+//        int b = sc.nextInt();
+//        int index_a = 0, index_b = 0;
+//        for (int i = 0; i < arr.length; i++) {
+//            if (arr[i] == a) {
+//                index_a = i;
+//            }
+//            if (arr[i] == b) {
+//                index_b = i;
+//            }
+//        }
+//        int c = arr[index_a];
+//        arr[index_a] = arr[index_b];
+//        arr[index_b] = c;
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.println(arr[i] + " ");
+//        }
+//    }
+//}
