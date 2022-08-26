@@ -1,8 +1,14 @@
 package com.company;
+import java.io.*;
+import java.net.*;
+import java.net.http.HttpClient;
 import java.util.*;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 
-//
+////
 public class Main {
 //  static int distClosestNumbers(int[] numbers) {
 //      System.out.println("The original array is: ");
@@ -98,8 +104,7 @@ public class Main {
 
     //  best solution I have found thus far
 //    public static void main(String[] args) {
-//
-//        for (int i = 0; i++ < 100; )
+//   for (int i = 0; i++ < 100; )
 //            System.out.println(i % 3 > 0 ? i % 5 > 0 ? i : "Buzz" : i % 5 > 0 ? "Fizz" : "FizzBuzz");
 //    }
 //}
@@ -1097,16 +1102,61 @@ public class Main {
 
 
     //get 2 arrays from user and print numbers that appear in both arrays
-    public static void main(String[] args) {
-        int[] arr1 = {5, 50, 34, 1, 6, 56, 82, 43, 101};
-        int[] arr2 = {6, 30, 34, 1, 16, 86, 89, 42, 101};
+//    public static void main(String[] args) {
+//        int[] arr1 = {5, 50, 34, 1, 6, 56, 82, 43, 101};
+//        int[] arr2 = {6, 30, 34, 1, 16, 86, 89, 42, 101};
+//
+//        for (int i = 0; i < arr1.length; i++) {
+//            for (int j = 0; j < arr1.length; j++) {
+//                if (arr1[i] == arr2[j]) {
+//                    System.out.println(arr1[i]);
+//                }
+//            }
+//        }
+//    }
+//}
+//    public static String isBalanced(String s) {
+//        Stack<Character> st = new Stack<>();
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String s = sc.nextLine();
+//        while (s.length() != (s = s.replaceAll("\\(\\)|\\[\\]|\\{\\}", "")).length()) ;
+//        if(s.isEmpty()) System.out.println("Yes");
+//        else {
+//            System.out.println("No");
+//        }
+//    }
+//}
 
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1.length; j++) {
-                if (arr1[i] == arr2[j]) {
-                    System.out.println(arr1[i]);
-                }
-            }
-        }
-    }
-}
+    //    public static String isBalanced(String s) {
+//        while (s.length() != (s = s.replaceAll("\\(\\)|\\[\\]|\\{\\}", "")).length()) ;
+//        return s.isEmpty() ? "YES" : "NO";
+//    }
+//}
+//    public static void main(String[] args) throws IOException {
+//        URL urlForGetRequest = new URL("https://jsonplaceholder.typicode.com/posts/1");
+//        String readLine = null;
+//        HttpURLConnection conection = (HttpURLConnection) urlForGetRequest.openConnection();
+//        conection.setRequestMethod("GET");
+//        conection.setRequestProperty("Title", "substr");
+//        int responseCode = conection.getResponseCode();
+//
+//
+//        if (responseCode == HttpURLConnection.HTTP_OK) {
+//            BufferedReader in = new BufferedReader(
+//                    new InputStreamReader(conection.getInputStream()));
+//            StringBuffer response = new StringBuffer();
+//            while ((readLine = in.readLine()) != null) {
+//                response.append(readLine);
+//            }
+//            in.close();
+//            System.out.println(response.toString());
+//        } else {
+//            System.out.println("GET NOT WORKED");
+//        }
+//
+//    }
+//}
+    URL url = new URL("http://example.com");
+    HttpURLConnection con = (HttpURLConnection) url.openConnection();
+con.setRequestMethod("GET");
