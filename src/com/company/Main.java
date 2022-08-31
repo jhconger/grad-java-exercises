@@ -1157,6 +1157,18 @@ public class Main {
 //
 //    }
 //}
-    URL url = new URL("http://example.com");
-    HttpURLConnection con = (HttpURLConnection) url.openConnection();
-con.setRequestMethod("GET");
+
+//    accept array of characters and print vowels that exist within array
+//    public static void main(String[] args) {
+//        char[] arr = {'a', 'b','c', 'd', 'e', 'f', 'g', 'h', 'i'};
+//
+//
+//        for (int j = 0; j < arr.length; j++) {
+//            if(arr[j]=='a' || arr[j]=='e' ||arr[j]=='i' || arr[j]=='o' ||
+//                    arr[j]=='u' || arr[j]=='y')
+//
+//                    System.out.println(arr[j]);
+//                }
+//            }
+//        }
+
